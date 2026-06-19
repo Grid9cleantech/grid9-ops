@@ -1,0 +1,26 @@
+{
+  "name": "Grid9 Cleantech Business Ops",
+  "short_name": "Grid9 Ops",
+  "description": "Grid9 Cleantech Business Operations App",
+  "start_url": "/grid9-ops/",
+  "scope": "/grid9-ops/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d1b2a",
+  "theme_color": "#1a7a4a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/1a7a4a/ffffff?text=G9",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/1a7a4a/ffffff?text=G9",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
