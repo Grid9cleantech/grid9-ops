@@ -18,7 +18,7 @@ header{background:var(--dark);color:#fff;padding:12px 16px;display:flex;align-it
 background:rgba(13,27,42,0.9);backdrop-filter:blur(20px);color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 4px 30px rgba(0,0,0,0.3);border-bottom:1px solid rgba(255,255,255,0.1)}
 .hamburger{background:none;border:none;color:#fff;font-size:24px;cursor:pointer}
 nav{background:var(--dark);display:none;flex-direction:column;position:fixed;top:62px;left:0;right:0;bottom:0;z-index:99;overflow-y:auto}
-nav.open{display:flex}
+nav.open{display:flex} #login-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;background:linear-gradient(135deg,#0d1b2a 0%,#1a3a2a 100%);padding:20px;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;} .login-box{background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:40px 32px;width:100%;max-width:360px;} .login-logo{width:72px;height:72px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px;color:#fff;margin:0 auto 14px;} .login-title{text-align:center;color:#fff;font-size:20px;font-weight:700;margin-bottom:2px;} .login-sub{text-align:center;color:#aaa;font-size:12px;margin-bottom:24px;} .lf{margin-bottom:14px;} .lf label{display:block;color:#ccc;font-size:12px;margin-bottom:5px;} .lf input{width:100%;padding:11px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:#fff;font-size:14px;outline:none;box-sizing:border-box;} .lf input:focus{border-color:var(--green);} .login-btn{width:100%;padding:13px;background:var(--green);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;margin-top:6px;} .login-btn:hover{background:#25a85e;} .login-err{color:#ff6b6b;font-size:12px;text-align:center;margin-top:10px;display:none;} #app-wrap{display:none;} .logout-btn{background:none;border:1px solid rgba(255,255,255,0.4);color:#fff;padding:5px 12px;border-radius:6px;cursor:pointer;font-size:12px;margin-left:8px;}
 nav a{color:#ccd;padding:16px 24px;text-decoration:none;border-bottom:1px solid #1e2d3d;font-size:15px;display:flex;align-items:center;gap:12px}
 nav a:hover,nav a.active{background:var(--green);color:#fff}
 .overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:98}
@@ -79,13 +79,13 @@ tr:hover td{background:#f8fff9}
 </style>
 </head>
 <body>
-<div class="notification" id="notif"></div>
+<div id="login-screen"><div class="login-box"><div class="login-logo">G9</div><div class="login-title">Grid9 Cleantech</div><div class="login-sub">Business Operations Portal</div><div class="lf"><label>Username</label><input type="text" id="lu" placeholder="Enter username"></div><div class="lf"><label>Password</label><input type="password" id="lp" placeholder="Enter password"></div><button class="login-btn" onclick="doLogin()">Login</button><div class="login-err" id="lerr">Invalid username or password</div></div></div><div id="app-wrap"><div class="notification" id="notif"></div>
 <header>
   <div class="logo-area">
                 <div class="logo-circle">G9</div>
 <div class="brand"><h1>Grid9 Cleantech</h1><p>Business Operations</p></div>
   </div>
-  <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+  <button class="hamburger" onclick="toggleNav()">&#9776;</button><button class="logout-btn" onclick="doLogout()">Logout</button>
 </header>
 <div class="overlay" id="overlay" onclick="toggleNav()"></div>
 <nav id="nav">
@@ -294,7 +294,7 @@ function renderInvoices(){
 function printInvoice(i){
   let inv=db.invoices[i];
   let w=window.open('','_blank');
-  w.document.write(`<!DOCTYPE html><html><head><title>Invoice ${inv.num}</title><style>body{font-family:Arial,sans-serif;padding:30px;color:#1a1a2e}h1{color:#1a7a4a;font-size:32px;letter-spacing:3px}.header{display:flex;justify-content:space-between;border-bottom:3px solid #1a7a4a;padding-bottom:16px;margin-bottom:20px}table{width:100%;border-collapse:collapse}th{background:#1a7a4a;color:#fff;padding:10px}td{padding:10px;border-bottom:1px solid #ddd}.total{background:#f0f4f8;padding:16px;border-radius:8px;margin-top:16px;text-align:right}.footer{margin-top:30px;text-align:center;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:16px}</style></head><body><div class="header"><div><h1>INVOICE</h1><strong>Grid9 Cleantech Pvt Ltd</strong><br>Coimbatore, Tamil Nadu<br>GST: [Your GSTIN]<br>${inv.date}</div><div style="text-align:right"><strong>#${inv.num}</strong><br>Status: ${inv.status}</div></div><p><strong>Bill To:</strong><br>${inv.client}<br>${inv.addr||''}</p><table><thead><tr><th>Description</th><th>Amount</th><th>GST ${inv.gst}%</th><th>Total</th></tr></thead><tbody><tr><td>${inv.desc}</td><td>&#8377;${inv.amount.toLocaleString('en-IN')}</td><td>&#8377;${inv.gstAmt.toLocaleString('en-IN')}</td><td>&#8377;${inv.total.toLocaleString('en-IN')}</td></tr></tbody></table><div class="total"><strong>Grand Total: &#8377;${inv.total.toLocaleString('en-IN')}</strong></div><div class="footer">Grid9 Cleantech Pvt Ltd | Thank you for your business!</div><script>window.print();<\/script></body></html>`);
+  w.document.write(`<!DOCTYPE html><html><head><title>Invoice ${inv.num}</title><style>body{font-family:Arial,sans-serif;padding:30px;color:#1a1a2e}h1{color:#1a7a4a;font-size:32px;letter-spacing:3px}.header{display:flex;justify-content:space-between;border-bottom:3px solid #1a7a4a;padding-bottom:16px;margin-bottom:20px}table{width:100%;border-collapse:collapse}th{background:#1a7a4a;color:#fff;padding:10px}td{padding:10px;border-bottom:1px solid #ddd}.total{background:#f0f4f8;padding:16px;border-radius:8px;margin-top:16px;text-align:right}.footer{margin-top:30px;text-align:center;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:16px}</style></head><body><div class="header"><div><h1>INVOICE</h1><strong>Grid9 Cleantech Pvt Ltd</strong><br>Coimbatore, Tamil Nadu<br>GST: [Your GSTIN]<br>${inv.date}</div><div style="text-align:right"><strong>#${inv.num}</strong><br>Status: ${inv.status}</div></div><p><strong>Bill To:</strong><br>${inv.client}<br>${inv.addr||''}</p><table><thead><tr><th>Description</th><th>Amount</th><th>GST ${inv.gst}%</th><th>Total</th></tr></thead><tbody><tr><td>${inv.desc}</td><td>&#8377;${inv.amount.toLocaleString('en-IN')}</td><td>&#8377;${inv.gstAmt.toLocaleString('en-IN')}</td><td>&#8377;${inv.total.toLocaleString('en-IN')}</td></tr></tbody></table><div class="total"><strong>Grand Total: &#8377;${inv.total.toLocaleString('en-IN')}</strong></div><div class="footer">Grid9 Cleantech Pvt Ltd | Thank you for your business!</div><script>window.print();<\/script></div></body></html>`);
 }
 function saveEmployee(){
   let name=document.getElementById('e-name').value.trim();
@@ -388,7 +388,7 @@ async function sendEmail(){
     else{alert('Failed: '+data.error);}
   }catch(err){alert('Cannot connect to server');}
 }
-load();renderDashboard();
+function doLogin(){const u=document.getElementById('lu').value.trim();const p=document.getElementById('lp').value;if(u==='Admin'&&p==='Gridclea@2026'){document.getElementById('login-screen').style.display='none';document.getElementById('app-wrap').style.display='block';sessionStorage.setItem('g9auth','1');}else{const e=document.getElementById('lerr');e.style.display='block';setTimeout(()=>e.style.display='none',3000);}}function doLogout(){sessionStorage.removeItem('g9auth');document.getElementById('app-wrap').style.display='none';document.getElementById('login-screen').style.display='flex';document.getElementById('lu').value='';document.getElementById('lp').value='';}document.addEventListener('keydown',e=>{if(e.key==='Enter'&&document.getElementById('login-screen').style.display!=='none')doLogin();});if(sessionStorage.getItem('g9auth')==='1'){document.getElementById('login-screen').style.display='none';document.getElementById('app-wrap').style.display='block';}load();renderDashboard();
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
 </script>
 </body>
