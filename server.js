@@ -8,8 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const MAIL_USER = process.env.MAIL_USER || 'ganesan@grid9cleantech.com';
-const MAIL_PASS = process.env.MAIL_PASS || '';
+const MAIL_USER = process.env.EMAIL_USER || 'ganesan@grid9cleantech.com';
+const MAIL_PASS = process.env.EMAIL_PASS || '';
 const IMAP_HOST = process.env.IMAP_HOST || 'mail.grid9cleantech.com';
 const SMTP_HOST = process.env.SMTP_HOST || 'mail.grid9cleantech.com';
 const IMAP_PORT = parseInt(process.env.IMAP_PORT || '993');
