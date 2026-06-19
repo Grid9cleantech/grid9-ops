@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Grid9 Cleantech - Business Ops</title>
     <link rel="manifest" href="/grid9-ops/manifest.json">
->
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#1a1a2e;min-height:100vh}
@@ -89,7 +89,7 @@ tr:hover td{background:#f8fff9}
 </header>
 <div class="overlay" id="overlay" onclick="toggleNav()"></div>
 <nav id="nav">
-  <a href="#" class="active" onclick="showSection('dashboard',this)">&#127968; Dashboard</a>
+  <a href="#" class="active" onclick="showSection('dashboard',this)">&#127968; &#127968; Home</a>
   <a href="#" onclick="showSection('projects',this)">&#128196; Projects</a>
   <a href="#" onclick="showSection('finance',this)">&#128176; Finance</a>
   <a href="#" onclick="showSection('invoices',this)">&#128203; Invoices</a>
@@ -152,8 +152,8 @@ tr:hover td{background:#f8fff9}
   <div class="mail-status"><div class="dot online" id="mailDot"></div><span id="mailStatusText">Connecting to mail server...</span><button class="btn small" onclick="refreshEmails()" style="margin-left:auto">&#8635; Refresh</button></div>
   <div class="send-form">
     <h3 style="font-size:14px;font-weight:700;margin-bottom:12px;color:#1a7a4a">&#9993; Send Email</h3>
-    <div class="form-row"><div class="form-group">abel>To</label><input id="send-to" placeholder="recipient@email.com"></div><div class="form-group">abel>Subject</label><input id="send-subject" placeholder="Subject"></div></div>
-    <div class="form-group">abel>Message</label><textarea id="send-body" rows="3" placeholder="Type your message..."></textarea></div>
+    <div class="form-row"><div class="form-group"><label>To</label><input id="send-to" placeholder="recipient@email.com"></div><div class="form-group"><label>Subject</label><input id="send-subject" placeholder="Subject"></div></div>
+    <div class="form-group"><label>Message</label><textarea id="send-body" rows="3" placeholder="Type your message..."></textarea></div>
     <button class="btn" onclick="sendEmail()">&#9993; Send Email</button>
   </div>
   <div class="panel">
@@ -174,37 +174,37 @@ tr:hover td{background:#f8fff9}
 </main>
 <!-- PROJECT MODAL -->
 <div class="modal" id="projectModal"><div class="modal-box"><h3>Add Project</h3>
-  <div class="form-group">abel>Project Name*</label><input id="p-name" placeholder="e.g. EV Bus Design - MTC"></div>
-  <div class="form-row"><div class="form-group">abel>Client*</label><input id="p-client" placeholder="Client name"></div><div class="form-group">abel>Project Value (&#8377;)*</label><input id="p-value" type="number" placeholder="0"></div></div>
-  <div class="form-row"><div class="form-group">abel>Start Date</label><input id="p-start" type="date"></div><div class="form-group">abel>Due Date</label><input id="p-due" type="date"></div></div>
-  <div class="form-row"><div class="form-group">abel>Status</label><select id="p-status"><option>Active</option><option>Pending</option><option>Completed</option><option>On Hold</option><option>Cancelled</option></select></div><div class="form-group">abel>Assigned To</label><input id="p-assign" placeholder="Employee name"></div></div>
-  <div class="form-group">abel>Description</label><textarea id="p-desc" rows="3" placeholder="Project details..."></textarea></div>
+  <div class="form-group"><label>Project Name</label><input id="p-name" placeholder="e.g. EV Bus Design - MTC"></div>
+  <div class="form-row"><div class="form-group"><label>Client</label><input id="p-client" placeholder="Client name"></div><div class="form-group"><label>Project Value (&#8377;)</label><input id="p-value" type="number" placeholder="0"></div></div>
+  <div class="form-row"><div class="form-group"><label>Start Date</label><input id="p-start" type="date"></div><div class="form-group"><label>Due Date</label><input id="p-due" type="date"></div></div>
+  <div class="form-row"><div class="form-group"><label>Status</label><select id="p-status"><option>Active</option><option>Pending</option><option>Completed</option><option>On Hold</option><option>Cancelled</option></select></div><div class="form-group"><label>Assigned To</label><input id="p-assign" placeholder="Employee name"></div></div>
+  <div class="form-group"><label>Description</label><textarea id="p-desc" rows="3" placeholder="Project details..."></textarea></div>
   <div class="modal-footer"><button class="btn outline" onclick="closeModal('projectModal')">Cancel</button><button class="btn" onclick="saveProject()">Save Project</button></div>
 </div></div>
 <!-- FINANCE MODAL -->
 <div class="modal" id="financeModal"><div class="modal-box"><h3>Add Finance Entry</h3>
-  <div class="form-row"><div class="form-group">abel>Date*</label><input id="f-date" type="date"></div><div class="form-group">abel>Type*</label><select id="f-type"><option>Income</option><option>Expense</option></select></div></div>
-  <div class="form-group">abel>Description*</label><input id="f-desc" placeholder="e.g. Payment from client"></div>
-  <div class="form-row"><div class="form-group">abel>Amount (&#8377;)*</label><input id="f-amount" type="number" placeholder="0"></div><div class="form-group">abel>Status</label><select id="f-status"><option>Received</option><option>Pending</option><option>Paid</option><option>Overdue</option></select></div></div>
-  <div class="form-group">abel>Linked Project</label><input id="f-project" placeholder="Project name"></div>
+  <div class="form-row"><div class="form-group"><label>Date</label><input id="f-date" type="date"></div><div class="form-group"><label>Type</label><select id="f-type"><option>Income</option><option>Expense</option></select></div></div>
+  <div class="form-group"><label>Description</label><input id="f-desc" placeholder="e.g. Payment from client"></div>
+  <div class="form-row"><div class="form-group"><label>Amount (&#8377;)</label><input id="f-amount" type="number" placeholder="0"></div><div class="form-group"><label>Status</label><select id="f-status"><option>Received</option><option>Pending</option><option>Paid</option><option>Overdue</option></select></div></div>
+  <div class="form-group"><label>Linked Project</label><input id="f-project" placeholder="Project name"></div>
   <div class="modal-footer"><button class="btn outline" onclick="closeModal('financeModal')">Cancel</button><button class="btn" onclick="saveFinance()">Save Entry</button></div>
 </div></div>
 <!-- INVOICE MODAL -->
 <div class="modal" id="invoiceModal"><div class="modal-box"><h3>Create Invoice</h3>
-  <div class="form-row"><div class="form-group">abel>Invoice #*</label><input id="i-num" placeholder="INV-001"></div><div class="form-group">abel>Date*</label><input id="i-date" type="date"></div></div>
-  <div class="form-group">abel>Client Name*</label><input id="i-client" placeholder="Client / Company name"></div>
-  <div class="form-group">abel>Client Address</label><textarea id="i-addr" rows="2" placeholder="Client address"></textarea></div>
-  <div class="form-group">abel>Description of Work*</label><input id="i-desc" placeholder="e.g. EV Bus Design Consultancy"></div>
-  <div class="form-row"><div class="form-group">abel>Amount (&#8377;)*</label><input id="i-amount" type="number" placeholder="0"></div><div class="form-group">abel>GST %</label><select id="i-gst"><option value="0">0%</option><option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option></select></div></div>
-  <div class="form-group">abel>Payment Status</label><select id="i-status"><option>Unpaid</option><option>Paid</option><option>Partial</option></select></div>
+  <div class="form-row"><div class="form-group"><label>Invoice #</label><input id="i-num" placeholder="INV-001"></div><div class="form-group"><label>Date</label><input id="i-date" type="date"></div></div>
+  <div class="form-group"><label>Client Name</label><input id="i-client" placeholder="Client / Company name"></div>
+  <div class="form-group"><label>Client Address</label><textarea id="i-addr" rows="2" placeholder="Client address"></textarea></div>
+  <div class="form-group"><label>Description of Work</label><input id="i-desc" placeholder="e.g. EV Bus Design Consultancy"></div>
+  <div class="form-row"><div class="form-group"><label>Amount (&#8377;)</label><input id="i-amount" type="number" placeholder="0"></div><div class="form-group"><label>GST %</label><select id="i-gst"><option value="0">0%</option><option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option></select></div></div>
+  <div class="form-group"><label>Payment Status</label><select id="i-status"><option>Unpaid</option><option>Paid</option><option>Partial</option></select></div>
   <div class="modal-footer"><button class="btn outline" onclick="closeModal('invoiceModal')">Cancel</button><button class="btn" onclick="saveInvoice()">Create Invoice</button></div>
 </div></div>
 <!-- EMPLOYEE MODAL -->
 <div class="modal" id="employeeModal"><div class="modal-box"><h3>Add Employee</h3>
-  <div class="form-row"><div class="form-group">abel>Full Name*</label><input id="e-name" placeholder="Full name"></div><div class="form-group">abel>Role*</label><input id="e-role" placeholder="e.g. Design Engineer"></div></div>
-  <div class="form-row"><div class="form-group">abel>Department</label><input id="e-dept" placeholder="e.g. Engineering"></div><div class="form-group">abel>Phone</label><input id="e-phone" placeholder="Mobile number"></div></div>
-  <div class="form-row"><div class="form-group">abel>Email</label><input id="e-email" placeholder="email@example.com"></div><div class="form-group">abel>Salary/Fee (&#8377;)</label><input id="e-salary" type="number" placeholder="0"></div></div>
-  <div class="form-group">abel>Status</label><select id="e-status"><option>Active</option><option>Inactive</option><option>Consultant</option></select></div>
+  <div class="form-row"><div class="form-group"><label>Full Name</label><input id="e-name" placeholder="Full name"></div><div class="form-group"><label>Role</label><input id="e-role" placeholder="e.g. Design Engineer"></div></div>
+  <div class="form-row"><div class="form-group"><label>Department</label><input id="e-dept" placeholder="e.g. Engineering"></div><div class="form-group"><label>Phone</label><input id="e-phone" placeholder="Mobile number"></div></div>
+  <div class="form-row"><div class="form-group"><label>Email</label><input id="e-email" placeholder="email@example.com"></div><div class="form-group"><label>Salary/Fee (&#8377;)</label><input id="e-salary" type="number" placeholder="0"></div></div>
+  <div class="form-group"><label>Status</label><select id="e-status"><option>Active</option><option>Inactive</option><option>Consultant</option></select></div>
   <div class="modal-footer"><button class="btn outline" onclick="closeModal('employeeModal')">Cancel</button><button class="btn" onclick="saveEmployee()">Save Employee</button></div>
 </div></div>
 <script>
