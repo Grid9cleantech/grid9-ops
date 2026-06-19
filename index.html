@@ -1,16 +1,3 @@
-You are already on the right page. Here is the complete Grid9 Cleantech PWA app code. **Copy it and paste into the editor.** [github](https://github.com/Grid9cleantech/grid9-ops/new/main)
-
-***
-
-**Step 1:** Type `index.html` in the filename box at the top
-
-**Step 2:** Click inside the editor area (where it says "Enter file contents here")
-
-**Step 3:** Press **Ctrl+A** then **Ctrl+V** to paste the code below
-
-***
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +5,6 @@ You are already on the right page. Here is the complete Grid9 Cleantech PWA app 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#1a7a4a">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Grid9 Ops">
 <title>Grid9 Cleantech - Business Ops</title>
 >
 <style>
@@ -28,34 +13,27 @@ body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#1a1a2e;min-heig
 :root{--green:#1a7a4a;--green2:#25a85e;--dark:#0d1b2a;--card:#fff;--accent:#f0a500}
 header{background:var(--dark);color:#fff;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
 .logo-area{display:flex;align-items:center;gap:10px}
-.logo-circle{width:38px;height:38px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#fff;letter-spacing:-1px}
+.logo-circle{width:38px;height:38px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#fff}
 .brand h1{font-size:16px;font-weight:700;color:#fff}
 .brand p{font-size:10px;color:#aac;margin-top:1px}
-.hamburger{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:4px}
+.hamburger{background:none;border:none;color:#fff;font-size:24px;cursor:pointer}
 nav{background:var(--dark);display:none;flex-direction:column;position:fixed;top:62px;left:0;right:0;bottom:0;z-index:99;overflow-y:auto}
 nav.open{display:flex}
-nav a{color:#ccd;padding:16px 24px;text-decoration:none;border-bottom:1px solid #1e2d3d;font-size:15px;display:flex;align-items:center;gap:12px;transition:background 0.2s}
+nav a{color:#ccd;padding:16px 24px;text-decoration:none;border-bottom:1px solid #1e2d3d;font-size:15px;display:flex;align-items:center;gap:12px}
 nav a:hover,nav a.active{background:var(--green);color:#fff}
 .overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:98}
 .overlay.open{display:block}
 main{padding:16px;max-width:900px;margin:0 auto}
-.section{display:none}
-.section.active{display:block}
+.section{display:none}.section.active{display:block}
 h2{font-size:20px;font-weight:700;color:var(--dark);margin-bottom:16px;padding-bottom:8px;border-bottom:3px solid var(--green)}
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px}
 .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
 .card.full{grid-column:1/-1}
-.card h3{font-size:12px;color:#666;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px}
+.card h3{font-size:12px;color:#666;text-transform:uppercase;margin-bottom:8px}
 .card .value{font-size:28px;font-weight:800;color:var(--dark)}
-.card .value.green{color:var(--green)}
-.card .value.red{color:#e74c3c}
-.card .value.orange{color:var(--accent)}
-.btn{background:var(--green);color:#fff;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:background 0.2s}
-.btn:hover{background:var(--green2)}
-.btn.red{background:#e74c3c}
-.btn.orange{background:var(--accent)}
-.btn.small{padding:6px 12px;font-size:12px}
-.btn.outline{background:transparent;border:2px solid var(--green);color:var(--green)}
+.card .value.green{color:var(--green)}.card .value.red{color:#e74c3c}.card .value.orange{color:var(--accent)}
+.btn{background:var(--green);color:#fff;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.btn.red{background:#e74c3c}.btn.small{padding:6px 12px;font-size:12px}.btn.outline{background:transparent;border:2px solid var(--green);color:var(--green)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{background:var(--dark);color:#fff;padding:10px 12px;text-align:left;font-size:12px}
 td{padding:10px 12px;border-bottom:1px solid #eee}
@@ -68,13 +46,13 @@ tr:hover td{background:#f8fff9}
 .badge.cancelled{background:#e2e3e5;color:#383d41}
 .form-group{margin-bottom:14px}
 .form-group label{display:block;font-size:13px;font-weight:600;color:#444;margin-bottom:5px}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:2px solid #e0e0e0;border-radius:8px;font-size:14px;transition:border 0.2s;background:#fff}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:2px solid #e0e0e0;border-radius:8px;font-size:14px;background:#fff}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--green)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .panel{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:16px}
-.panel-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.tab-bar{display:flex;gap:0;margin-bottom:16px;background:#e8f5e9;border-radius:8px;padding:4px}
-.tab-btn{flex:1;padding:8px;border:none;background:none;cursor:pointer;border-radius:6px;font-size:13px;font-weight:600;color:#555;transition:all 0.2s}
+.panel-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.tab-bar{display:flex;gap:0;background:#e8f5e9;border-radius:8px;padding:4px}
+.tab-btn{flex:1;padding:8px;border:none;background:none;cursor:pointer;border-radius:6px;font-size:13px;font-weight:600;color:#555}
 .tab-btn.active{background:var(--green);color:#fff}
 .empty{text-align:center;padding:40px;color:#aaa;font-size:14px}
 .modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:200;align-items:center;justify-content:center;padding:16px}
@@ -84,14 +62,17 @@ tr:hover td{background:#f8fff9}
 .modal-footer{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
 .stat-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #eee}
 .stat-row:last-child{border:none}
-.progress-bar{height:6px;background:#e0e0e0;border-radius:3px;margin-top:6px}
-.progress-fill{height:100%;background:var(--green);border-radius:3px;transition:width 0.5s}
-.invoice-preview{border:2px solid #e0e0e0;border-radius:12px;padding:20px;margin-top:16px;background:#fff}
-.inv-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;padding-bottom:16px;border-bottom:3px solid var(--green)}
-.inv-title{font-size:28px;font-weight:900;color:var(--green);letter-spacing:2px}
-.inv-table th{background:var(--green);color:#fff;padding:8px}
-.inv-table td{padding:8px;border-bottom:1px solid #ddd}
-.inv-total{background:#f0f4f8;padding:12px;border-radius:8px;margin-top:12px}
+.mail-item{background:#fff;border-radius:10px;padding:14px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.08);border-left:4px solid var(--green);cursor:pointer}
+.mail-item:hover{background:#f8fff9}
+.mail-subject{font-weight:700;font-size:14px;color:var(--dark);margin-bottom:4px}
+.mail-from{font-size:12px;color:#666;margin-bottom:4px}
+.mail-preview{font-size:12px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mail-date{font-size:11px;color:#aaa;float:right}
+.mail-status{display:flex;align-items:center;gap:8px;padding:12px;background:#e8f5e9;border-radius:8px;margin-bottom:16px;font-size:13px;font-weight:600}
+.dot{width:10px;height:10px;border-radius:50%;background:#ccc}
+.dot.online{background:#25a85e;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+.send-form{background:#f8fff9;border-radius:10px;padding:16px;margin-bottom:16px;border:2px solid #d4edda}
 .notification{position:fixed;bottom:20px;right:20px;background:var(--green);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:600;z-index:300;box-shadow:0 4px 12px rgba(0,0,0,0.2);transform:translateY(100px);transition:transform 0.3s}
 .notification.show{transform:translateY(0)}
 @media(min-width:600px){nav{position:static;display:flex;flex-direction:row;overflow:visible;background:var(--dark)}.hamburger{display:none}.overlay{display:none!important}nav a{padding:12px 16px;border-bottom:none;font-size:13px}header{padding:10px 20px}.cards{grid-template-columns:repeat(4,1fr)}}
@@ -117,225 +98,118 @@ tr:hover td{background:#f8fff9}
   <a href="#" onclick="showSection('tax',this)">&#128221; Tax</a>
 </nav>
 <main>
-<!-- DASHBOARD -->
 <div class="section active" id="dashboard">
   <h2>Dashboard</h2>
-  <div class="cards" id="dashCards">
+  <div class="cards">
     <div class="card"><h3>Active Projects</h3><div class="value green" id="dc-proj">0</div></div>
-    <div class="card"><h3>Total Receivable</h3><div class="value green" id="dc-recv">₹0</div></div>
-    <div class="card"><h3>Total Payable</h3><div class="value red" id="dc-pay">₹0</div></div>
+    <div class="card"><h3>Total Receivable</h3><div class="value green" id="dc-recv">&#8377;0</div></div>
+    <div class="card"><h3>Total Payable</h3><div class="value red" id="dc-pay">&#8377;0</div></div>
     <div class="card"><h3>Employees</h3><div class="value orange" id="dc-emp">0</div></div>
     <div class="card full"><h3>Recent Projects</h3><div id="dash-projects"></div></div>
     <div class="card full"><h3>Finance Summary</h3><div id="dash-finance"></div></div>
   </div>
 </div>
-<!-- PROJECTS -->
 <div class="section" id="projects">
   <h2>Projects</h2>
   <div class="panel">
-    <div class="panel-header">
-      <span style="font-weight:700;font-size:15px">All Projects</span>
-      <button class="btn" onclick="openModal('projectModal')">+ Add Project</button>
-    </div>
-    <div style="overflow-x:auto"><table id="projectTable">
-      <thead><tr><th>Project</th><th>Client</th><th>Value</th><th>Status</th><th>Due</th><th>Action</th></tr></thead>
-      <tbody id="projectBody"><tr><td colspan="6" class="empty">No projects yet. Add your first project.</td></tr></tbody>
-    </table></div>
+    <div class="panel-header"><span style="font-weight:700">All Projects</span><button class="btn" onclick="openModal('projectModal')">+ Add Project</button></div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Project</th><th>Client</th><th>Value</th><th>Status</th><th>Due</th><th>Action</th></tr></thead><tbody id="projectBody"><tr><td colspan="6" class="empty">No projects yet.</td></tr></tbody></table></div>
   </div>
 </div>
-<!-- FINANCE -->
 <div class="section" id="finance">
   <h2>Finance</h2>
   <div class="cards">
-    <div class="card"><h3>Total Income</h3><div class="value green" id="fin-income">₹0</div></div>
-    <div class="card"><h3>Total Expense</h3><div class="value red" id="fin-expense">₹0</div></div>
-    <div class="card"><h3>Net Balance</h3><div class="value" id="fin-balance">₹0</div></div>
-    <div class="card"><h3>Pending</h3><div class="value orange" id="fin-pending">₹0</div></div>
+    <div class="card"><h3>Total Income</h3><div class="value green" id="fin-income">&#8377;0</div></div>
+    <div class="card"><h3>Total Expense</h3><div class="value red" id="fin-expense">&#8377;0</div></div>
+    <div class="card"><h3>Net Balance</h3><div class="value" id="fin-balance">&#8377;0</div></div>
+    <div class="card"><h3>Pending</h3><div class="value orange" id="fin-pending">&#8377;0</div></div>
   </div>
   <div class="panel">
     <div class="panel-header">
-      <div class="tab-bar">
-        <button class="tab-btn active" onclick="finTab('all',this)">All</button>
-        <button class="tab-btn" onclick="finTab('income',this)">Income</button>
-        <button class="tab-btn" onclick="finTab('expense',this)">Expense</button>
-      </div>
+      <div class="tab-bar"><button class="tab-btn active" onclick="finTab('all',this)">All</button><button class="tab-btn" onclick="finTab('income',this)">Income</button><button class="tab-btn" onclick="finTab('expense',this)">Expense</button></div>
       <button class="btn" onclick="openModal('financeModal')">+ Add Entry</button>
     </div>
-    <div style="overflow-x:auto"><table>
-      <thead><tr><th>Date</th><th>Description</th><th>Type</th><th>Amount</th><th>Status</th><th>Action</th></tr></thead>
-      <tbody id="financeBody"><tr><td colspan="6" class="empty">No entries yet.</td></tr></tbody>
-    </table></div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Date</th><th>Description</th><th>Type</th><th>Amount</th><th>Status</th><th>Action</th></tr></thead><tbody id="financeBody"><tr><td colspan="6" class="empty">No entries yet.</td></tr></tbody></table></div>
   </div>
 </div>
-<!-- INVOICES -->
 <div class="section" id="invoices">
   <h2>Invoices</h2>
   <div class="panel">
-    <div class="panel-header">
-      <span style="font-weight:700;font-size:15px">All Invoices</span>
-      <button class="btn"
-        onclick="openModal('invoiceModal')">+ New Invoice</button>
-    </div>
-    <div style="overflow-x:auto"><table>
-      <thead><tr><th>Invoice #</th><th>Client</th><th>Amount</th><th>GST</th><th>Total</th><th>Status</th><th>Action</th></tr></thead>
-      <tbody id="invoiceBody"><tr><td colspan="7" class="empty">No invoices yet.</td></tr></tbody>
-    </table></div>
+    <div class="panel-header"><span style="font-weight:700">All Invoices</span><button class="btn" onclick="openModal('invoiceModal')">+ New Invoice</button></div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Invoice #</th><th>Client</th><th>Amount</th><th>GST</th><th>Total</th><th>Status</th><th>Action</th></tr></thead><tbody id="invoiceBody"><tr><td colspan="7" class="empty">No invoices yet.</td></tr></tbody></table></div>
   </div>
 </div>
-<!-- EMPLOYEES -->
 <div class="section" id="employees">
   <h2>Employees</h2>
   <div class="panel">
-    <div class="panel-header">
-      <span style="font-weight:700;font-size:15px">Team Members</span>
-      <button class="btn" onclick="openModal('employeeModal')">+ Add Employee</button>
-    </div>
-    <div style="overflow-x:auto"><table>
-      <thead><tr><th>Name</th><th>Role</th><th>Department</th><th>Email</th><th>Phone</th><th>Status</th><th>Action</th></tr></thead>
-      <tbody id="employeeBody"><tr><td colspan="7" class="empty">No employees yet.</td></tr></tbody>
-    </table></div>
+    <div class="panel-header"><span style="font-weight:700">
+      Team Members</span><button class="btn" onclick="openModal('employeeModal')">+ Add Employee</button></div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Name</th><th>Role</th><th>Dept</th><th>Email</th><th>Phone</th><th>Status</th><th>Action</th></tr></thead><tbody id="employeeBody"><tr><td colspan="7" class="empty">No employees yet.</td></tr></tbody></table></div>
   </div>
 </div>
-<!-- MAIL -->
 <div class="section" id="mail">
-  <h2>Mail Tracker</h2>
+  <h2>&#128140; Mail — ganesan@grid9cleantech.com</h2>
+  <div class="mail-status"><div class="dot online" id="mailDot"></div><span id="mailStatusText">Connecting to mail server...</span><button class="btn small" onclick="refreshEmails()" style="margin-left:auto">&#8635; Refresh</button></div>
+  <div class="send-form">
+    <h3 style="font-size:14px;font-weight:700;margin-bottom:12px;color:#1a7a4a">&#9993; Send Email</h3>
+    <div class="form-row"><div class="form-group">abel>To</label><input id="send-to" placeholder="recipient@email.com"></div><div class="form-group">abel>Subject</label><input id="send-subject" placeholder="Subject"></div></div>
+    <div class="form-group">abel>Message</label><textarea id="send-body" rows="3" placeholder="Type your message..."></textarea></div>
+    <button class="btn" onclick="sendEmail()">&#9993; Send Email</button>
+  </div>
   <div class="panel">
-    <div class="panel-header">
-      <span style="font-weight:700;font-size:15px">Linked Emails</span>
-      <button class="btn" onclick="openModal('mailModal')">+ Log Email</button>
-    </div>
-    <div style="overflow-x:auto"><table>
-      <thead><tr><th>Date</th><th>From/To</th><th>Subject</th><th>Project</th><th>Type</th><th>Status</th></tr></thead>
-      <tbody id="mailBody"><tr><td colspan="6" class="empty">No emails logged yet.</td></tr></tbody>
-    </table></div>
+    <div class="panel-header"><span style="font-weight:700">Inbox</span><span id="mailCount" style="font-size:12px;color:#666"></span></div>
+    <div id="mailList"><div class="empty">Loading emails...</div></div>
   </div>
 </div>
-<!-- TAX -->
 <div class="section" id="tax">
-  <h2>GST & Tax</h2>
+  <h2>GST &amp; Tax</h2>
   <div class="cards">
-    <div class="card"><h3>Output GST (Collected)</h3><div class="value green" id="tax-out">₹0</div></div>
-    <div class="card"><h3>Input GST (Paid)</h3><div class="value red" id="tax-in">₹0</div></div>
-    <div class="card"><h3>Net GST Payable</h3><div class="value orange" id="tax-net">₹0</div></div>
-    <div class="card"><h3>This Month Invoices</h3><div class="value" id="tax-inv">0</div></div>
-    <div class="card full">
-      <h3>GST Summary by Month</h3>
-      <table><thead><tr><th>Month</th><th>Invoiced</th><th>Output GST</th><th>Input GST</th><th>Net Payable</th></tr></thead>
-      <tbody id="taxBody"><tr><td colspan="5" class="empty">No GST data yet.</td></tr></tbody></table>
-    </div>
+    <div class="card"><h3>Output GST</h3><div class="value green" id="tax-out">&#8377;0</div></div>
+    <div class="card"><h3>Input GST</h3><div class="value red" id="tax-in">&#8377;0</div></div>
+    <div class="card"><h3>Net GST Payable</h3><div class="value orange" id="tax-net">&#8377;0</div></div>
+    <div class="card"><h3>Total Invoices</h3><div class="value" id="tax-inv">0</div></div>
+    <div class="card full"><h3>GST Summary</h3><table><thead><tr><th>Date</th><th>Invoiced</th><th>Output GST</th><th>Input GST</th><th>Net Payable</th></tr></thead><tbody id="taxBody"><tr><td colspan="5" class="empty">No GST data yet.</td></tr></tbody></table></div>
   </div>
 </div>
 </main>
-
 <!-- PROJECT MODAL -->
-<div class="modal" id="projectModal">
-<div class="modal-box">
-  <h3>Add Project</h3>
+<div class="modal" id="projectModal"><div class="modal-box"><h3>Add Project</h3>
   <div class="form-group">abel>Project Name*</label><input id="p-name" placeholder="e.g. EV Bus Design - MTC"></div>
-  <div class="form-row">
-    <div class="form-group">abel>Client*</label><input id="p-client" placeholder="Client name"></div>
-    <div class="form-group">abel>Project Value (₹)*</label><input id="p-value" type="number" placeholder="0"></div>
-  </div>
-  <div class="form-row">
-    <div class="form-group">abel>Start Date</label><input id="p-start" type="date"></div>
-    <div class="form-group">abel>Due Date</label><input id="p-due" type="date"></div>
-  </div>
-  <div class="form-row">
-    <div class="form-group">abel>Status</label><select id="p-status"><option>Active</option><option>Pending</option><option>Completed</option><option>On Hold</option><option>Cancelled</option></select></div>
-    <div class="form-group">abel>Assigned To</label><input id="p-assign" placeholder="Employee name"></div>
-  </div>
+  <div class="form-row"><div class="form-group">abel>Client*</label><input id="p-client" placeholder="Client name"></div><div class="form-group">abel>Project Value (&#8377;)*</label><input id="p-value" type="number" placeholder="0"></div></div>
+  <div class="form-row"><div class="form-group">abel>Start Date</label><input id="p-start" type="date"></div><div class="form-group">abel>Due Date</label><input id="p-due" type="date"></div></div>
+  <div class="form-row"><div class="form-group">abel>Status</label><select id="p-status"><option>Active</option><option>Pending</option><option>Completed</option><option>On Hold</option><option>Cancelled</option></select></div><div class="form-group">abel>Assigned To</label><input id="p-assign" placeholder="Employee name"></div></div>
   <div class="form-group">abel>Description</label><textarea id="p-desc" rows="3" placeholder="Project details..."></textarea></div>
-  <div class="modal-footer">
-    <button class="btn outline" onclick="closeModal('projectModal')">Cancel</button>
-    <button class="btn" onclick="saveProject()">Save Project</button>
-  </div>
+  <div class="modal-footer"><button class="btn outline" onclick="closeModal('projectModal')">Cancel</button><button class="btn" onclick="saveProject()">Save Project</button></div>
 </div></div>
-
 <!-- FINANCE MODAL -->
-<div class="modal" id="financeModal">
-<div class="modal-box">
-  <h3>Add Finance Entry</h3>
-  <div class="form-row">
-    <div class="form-group">abel>Date*</label><input id="f-date" type="date"></div>
-    <div class="form-group">abel>Type*</label><select id="f-type"><option>Income</option><option>Expense</option></select></div>
-  </div>
+<div class="modal" id="financeModal"><div class="modal-box"><h3>Add Finance Entry</h3>
+  <div class="form-row"><div class="form-group">abel>Date*</label><input id="f-date" type="date"></div><div class="form-group">abel>Type*</label><select id="f-type"><option>Income</option><option>Expense</option></select></div></div>
   <div class="form-group">abel>Description*</label><input id="f-desc" placeholder="e.g. Payment from client"></div>
-  <div class="form-row">
-    <div class="form-group">abel>Amount (₹)*</label><input id="f-amount" type="number" placeholder="0"></div>
-    <div class="form-group">abel>Status</label><select id="f-status"><option>Received</option><option>Pending</option><option>Paid</option><option>Overdue</option></select></div>
-  </div>
+  <div class="form-row"><div class="form-group">abel>Amount (&#8377;)*</label><input id="f-amount" type="number" placeholder="0"></div><div class="form-group">abel>Status</label><select id="f-status"><option>Received</option><option>Pending</option><option>Paid</option><option>Overdue</option></select></div></div>
   <div class="form-group">abel>Linked Project</label><input id="f-project" placeholder="Project name"></div>
-  <div class="modal-footer">
-    <button class="btn outline" onclick="closeModal('financeModal')">Cancel</button>
-    <button class="btn" onclick="saveFinance()">Save Entry</button>
-  </div>
+  <div class="modal-footer"><button class="btn outline" onclick="closeModal('financeModal')">Cancel</button><button class="btn" onclick="saveFinance()">Save Entry</button></div>
 </div></div>
-
 <!-- INVOICE MODAL -->
-<div class="modal" id="invoiceModal">
-<div class="modal-box">
-  <h3>Create Invoice</h3>
-  <div class="form-row">
-    <div class="form-group">abel>Invoice #*</label><input id="i-num" placeholder="INV-001"></div>
-    <div class="form-group">abel>Date*</label><input id="i-date" type="date"></div>
-  </div>
+<div class="modal" id="invoiceModal"><div class="modal-box"><h3>Create Invoice</h3>
+  <div class="form-row"><div class="form-group">abel>Invoice #*</label><input id="i-num" placeholder="INV-001"></div><div class="form-group">abel>Date*</label><input id="i-date" type="date"></div></div>
   <div class="form-group">abel>Client Name*</label><input id="i-client" placeholder="Client / Company name"></div>
   <div class="form-group">abel>Client Address</label><textarea id="i-addr" rows="2" placeholder="Client address"></textarea></div>
   <div class="form-group">abel>Description of Work*</label><input id="i-desc" placeholder="e.g. EV Bus Design Consultancy"></div>
-  <div class="form-row">
-    <div class="form-group">abel>Amount (₹)*</label><input id="i-amount" type="number" placeholder="0"></div>
-    <div class="form-group">abel>GST %</label><select id="i-gst"><option value="0">0%</option><option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option></select></div>
-  </div>
+  <div class="form-row"><div class="form-group">abel>Amount (&#8377;)*</label><input id="i-amount" type="number" placeholder="0"></div><div class="form-group">abel>GST %</label><select id="i-gst"><option value="0">0%</option><option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option></select></div></div>
   <div class="form-group">abel>Payment Status</label><select id="i-status"><option>Unpaid</option><option>Paid</option><option>Partial</option></select></div>
-  <div class="modal-footer">
-    <button class="btn outline" onclick="closeModal('invoiceModal')">Cancel</button>
-    <button class="btn" onclick="saveInvoice()">Create Invoice</button>
-  </div>
+  <div class="modal-footer"><button class="btn outline" onclick="closeModal('invoiceModal')">Cancel</button><button class="btn" onclick="saveInvoice()">Create Invoice</button></div>
 </div></div>
-
 <!-- EMPLOYEE MODAL -->
-<div class="modal" id="employeeModal">
-<div class="modal-box">
-  <h3>Add Employee</h3>
-  <div class="form-row">
-    <div class="form-group">abel>Full Name*</label><input id="e-name" placeholder="Full name"></div>
-    <div class="form-group">abel>Role*</label><input id="e-role" placeholder="e.g. Design Engineer"></div>
-  </div>
-  <div class="form-row">
-    <div class="form-group">abel>Department</label><input id="e-dept" placeholder="e.g. Engineering"></div>
-    <div class="form-group">abel>Phone</label><input id="e-phone" placeholder="Mobile number"></div>
-  </div>
-  <div class="form-row">
-    <div class="form-group">abel>Email</label><input id="e-email" placeholder="email@example.com"></div>
-    <div class="form-group">abel>Salary/Fee (₹)</label><input id="e-salary" type="number" placeholder="0"></div>
-  </div>
+<div class="modal" id="employeeModal"><div class="modal-box"><h3>Add Employee</h3>
+  <div class="form-row"><div class="form-group">abel>Full Name*</label><input id="e-name" placeholder="Full name"></div><div class="form-group">abel>Role*</label><input id="e-role" placeholder="e.g. Design Engineer"></div></div>
+  <div class="form-row"><div class="form-group">abel>Department</label><input id="e-dept" placeholder="e.g. Engineering"></div><div class="form-group">abel>Phone</label><input id="e-phone" placeholder="Mobile number"></div></div>
+  <div class="form-row"><div class="form-group">abel>Email</label><input id="e-email" placeholder="email@example.com"></div><div class="form-group">abel>Salary/Fee (&#8377;)</label><input id="e-salary" type="number" placeholder="0"></div></div>
   <div class="form-group">abel>Status</label><select id="e-status"><option>Active</option><option>Inactive</option><option>Consultant</option></select></div>
-  <div class="modal-footer">
-    <button class="btn outline" onclick="closeModal('employeeModal')">Cancel</button>
-    <button class="btn" onclick="saveEmployee()">Save Employee</button>
-  </div>
+  <div class="modal-footer"><button class="btn outline" onclick="closeModal('employeeModal')">Cancel</button><button class="btn" onclick="saveEmployee()">Save Employee</button></div>
 </div></div>
-
-<!-- MAIL MODAL -->
-<div class="modal" id="mailModal">
-<div class="modal-box">
-  <h3>Log Email</h3>
-  <div class="form-row">
-    <div class="form-group">abel>Date*</label><input id="m-date" type="date"></div>
-    <div class="form-group">abel>Type</label><select id="m-type"><option>Received</option><option>Sent</option></select></div>
-  </div>
-  <div class="form-group">abel>From / To*</label><input id="m-contact" placeholder="Email address or name"></div>
-  <div class="form-group">abel>Subject*</label><input id="m-subject" placeholder="Email subject"></div>
-  <div class="form-group">abel>Linked Project</label><input id="m-project" placeholder="Project name"></div>
-  <div class="form-group">abel>Notes</label><textarea id="m-notes" rows="3" placeholder="Key points from this email..."></textarea></div>
-  <div class="modal-footer">
-    <button class="btn outline" onclick="closeModal('mailModal')">Cancel</button>
-    <button class="btn" onclick="saveMail()">Save Email</button>
-  </div>
-</div></div>
-
 <script>
-let db={projects:[],finance:[],invoices:[],employees:[],mail:[]};
+const BACKEND='https://web-production-c625a2.up.railway.app';
+let db={projects:[],finance:[],invoices:[],employees:[]};
 function load(){try{let d=localStorage.getItem('g9ops');if(d)db=JSON.parse(d);}catch(e){}}
 function save(){localStorage.setItem('g9ops',JSON.stringify(db));}
 function notify(msg){let n=document.getElementById('notif');n.textContent=msg;n.classList.add('show');setTimeout(()=>n.classList.remove('show'),2500);}
@@ -354,16 +228,15 @@ function showSection(id,el){
   if(id==='finance')renderFinance();
   if(id==='invoices')renderInvoices();
   if(id==='employees')renderEmployees();
-  if(id==='mail')renderMail();
+  if(id==='mail')loadEmails();
   if(id==='tax')renderTax();
 }
-function fmt(n){return'₹'+Number(n).toLocaleString('en-IN');}
+function fmt(n){return'&#8377;'+Number(n).toLocaleString('en-IN');}
 function saveProject(){
   let name=document.getElementById('p-name').value.trim();
   let client=document.getElementById('p-client').value.trim();
-  let value=document.getElementById('p-value').value;
-  if(!name||!client){alert('Project name and client required');return;}
-  db.projects.push({id:Date.now(),name,client,value:+value||0,start:document.getElementById('p-start').value,due:document.getElementById('p-due').value,status:document.getElementById('p-status').value,assign:document.getElementById('p-assign').value,desc:document.getElementById('p-desc').value});
+  if(!name||!client){alert('Name and client required');return;}
+  db.projects.push({id:Date.now(),name,client,value:+document.getElementById('p-value').value||0,start:document.getElementById('p-start').value,due:document.getElementById('p-due').value,status:document.getElementById('p-status').value,assign:document.getElementById('p-assign').value,desc:document.getElementById('p-desc').value});
   save();closeModal('projectModal');renderProjects();renderDashboard();notify('Project added!');
   ['p-name','p-client','p-value','p-start','p-due','p-assign','p-desc'].forEach(id=>document.getElementById(id).value='');
 }
@@ -376,8 +249,7 @@ function saveFinance(){
   let desc=document.getElementById('f-desc').value.trim();
   let amount=document.getElementById('f-amount').value;
   let date=document.getElementById('f-date').value;
-  if(!desc||!amount||!date){alert
-                            ('Fill all fields');return;}
+  if(!desc||!amount||!date){alert('Fill all fields');return;}
   db.finance.push({id:Date.now(),date,desc,type:document.getElementById('f-type').value,amount:+amount,status:document.getElementById('f-status').value,project:document.getElementById('f-project').value});
   save();closeModal('financeModal');renderFinance();renderDashboard();notify('Entry added!');
   ['f-desc','f-amount','f-project'].forEach(id=>document.getElementById(id).value='');
@@ -387,21 +259,21 @@ function renderFinance(){
   let income=entries.filter(e=>e.type==='Income').reduce((s,e)=>s+e.amount,0);
   let expense=entries.filter(e=>e.type==='Expense').reduce((s,e)=>s+e.amount,0);
   let pending=entries.filter(e=>e.status==='Pending').reduce((s,e)=>s+e.amount,0);
-  document.getElementById('fin-income').textContent=fmt(income);
-  document.getElementById('fin-expense').textContent=fmt(expense);
-  document.getElementById('fin-balance').textContent=fmt(income-expense);
-  document.getElementById('fin-pending').textContent=fmt(pending);
+  document.getElementById('fin-income').innerHTML=fmt(income);
+  document.getElementById('fin-expense').innerHTML=fmt(expense);
+  document.getElementById('fin-balance').innerHTML=fmt(income-expense);
+  document.getElementById('fin-pending').innerHTML=fmt(pending);
   let tb=document.getElementById('financeBody');
   if(!entries.length){tb.innerHTML='<tr><td colspan="6" class="empty">No entries yet.</td></tr>';return;}
   tb.innerHTML=entries.map((e,i)=>`<tr><td>${e.date}</td><td>${e.desc}</td><td>${e.type}</td><td>${fmt(e.amount)}</td><td><span class="badge ${e.status.toLowerCase()}">${e.status}</span></td><td><button class="btn red small" onclick="deleteItem('finance',${i})">Del</button></td></tr>`).join('');
 }
 function finTab(type,el){
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  el.classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');
   let entries=type==='all'?db.finance:db.finance.filter(e=>e.type===type.charAt(0).toUpperCase()+type.slice(1));
   let tb=document.getElementById('financeBody');
   if(!entries.length){tb.innerHTML='<tr><td colspan="6" class="empty">No entries.</td></tr>';return;}
-  tb.innerHTML=entries.map((e,i)=>`<tr><td>${e.date}</td><td>${e.desc}</td><td>${e.type}</td><td>${fmt(e.amount)}</td><td><span class="badge ${e.status.toLowerCase()}">${e.status}</span></td><td><button class="btn red small" onclick="deleteItem('finance',${i})">Del</button></td></tr>`).join('');
+  tb.innerHTML=entries.map((e,i)=>`<tr><td>${e.date}</td><td>${e.desc}</td><td>${e.type}</td><td
+  >${fmt(e.amount)}</td><td><span class="badge ${e.status.toLowerCase()}">${e.status}</span></td><td><button class="btn red small" onclick="deleteItem('finance',${i})">Del</button></td></tr>`).join('');
 }
 function saveInvoice(){
   let num=document.getElementById('i-num').value.trim();
@@ -422,13 +294,7 @@ function renderInvoices(){
 function printInvoice(i){
   let inv=db.invoices[i];
   let w=window.open('','_blank');
-  w.document.write(`<!DOCTYPE html><html><head><title>Invoice ${inv.num}</title><style>body{font-family:Arial,sans-serif;padding:30px;color:#1a1a2e}h1{color:#1a7a4a;font-size:32px;letter-spacing:3px}.header{display:flex;justify-content:space-between;border-bottom:3px solid #1a7a4a;padding-bottom:16px;margin-bottom:20px}table{width:100%;border-collapse:collapse}th{background:#1a7a4a;color:#fff;padding:10px}td{padding:10px;border-bottom:1px solid #ddd}.total{background:#f0f4f8;padding:16px;border-radius:8px;margin-top:16px;text-align:right}.company{font-size:12px;color:#666}.footer{margin-top:30px;text-align:center;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:16px}</style></head><body>
-  <div class="header"><div><h1>INVOICE</h1><div class="company"><strong>Grid9 Cleantech Pvt Ltd</strong><br>Coimbatore, Tamil Nadu<br>GST: [Your GSTIN]</div></div><div style="text-align:right"><strong>Invoice #:</strong> ${inv.num}<br><strong>Date:</strong> ${inv.date}<br><strong>Status:</strong> ${inv.status}</div></div>
-  <p><strong>Bill To:</strong><br>${inv.client}<br>${inv.addr||''}</p>
-  <table><thead><tr><th>Description</th><th>Amount</th><th>GST ${inv.gst}%</th><th>Total</th></tr></thead><tbody><tr><td>${inv.desc}</td><td>₹${inv.amount.toLocaleString('en-IN')}</td><td>₹${inv.gstAmt.toLocaleString('en-IN')}</td><td>₹${inv.total.toLocaleString('en-IN')}</td></tr></tbody></table>
-  <div class="total"><strong>Grand Total: ₹${inv.total.toLocaleString('en-IN')}</strong></div>
-  <div class="footer">Grid9 Cleantech Pvt Ltd | Thank you for your business!</div>
-  <script>window.print();<\/script></body></html>`);
+  w.document.write(`<!DOCTYPE html><html><head><title>Invoice ${inv.num}</title><style>body{font-family:Arial,sans-serif;padding:30px;color:#1a1a2e}h1{color:#1a7a4a;font-size:32px;letter-spacing:3px}.header{display:flex;justify-content:space-between;border-bottom:3px solid #1a7a4a;padding-bottom:16px;margin-bottom:20px}table{width:100%;border-collapse:collapse}th{background:#1a7a4a;color:#fff;padding:10px}td{padding:10px;border-bottom:1px solid #ddd}.total{background:#f0f4f8;padding:16px;border-radius:8px;margin-top:16px;text-align:right}.footer{margin-top:30px;text-align:center;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:16px}</style></head><body><div class="header"><div><h1>INVOICE</h1><strong>Grid9 Cleantech Pvt Ltd</strong><br>Coimbatore, Tamil Nadu<br>GST: [Your GSTIN]<br>${inv.date}</div><div style="text-align:right"><strong>#${inv.num}</strong><br>Status: ${inv.status}</div></div><p><strong>Bill To:</strong><br>${inv.client}<br>${inv.addr||''}</p><table><thead><tr><th>Description</th><th>Amount</th><th>GST ${inv.gst}%</th><th>Total</th></tr></thead><tbody><tr><td>${inv.desc}</td><td>&#8377;${inv.amount.toLocaleString('en-IN')}</td><td>&#8377;${inv.gstAmt.toLocaleString('en-IN')}</td><td>&#8377;${inv.total.toLocaleString('en-IN')}</td></tr></tbody></table><div class="total"><strong>Grand Total: &#8377;${inv.total.toLocaleString('en-IN')}</strong></div><div class="footer">Grid9 Cleantech Pvt Ltd | Thank you for your business!</div><script>window.print();<\/script></body></html>`);
 }
 function saveEmployee(){
   let name=document.getElementById('e-name').value.trim();
@@ -443,26 +309,12 @@ function renderEmployees(){
   if(!db.employees.length){tb.innerHTML='<tr><td colspan="7" class="empty">No employees yet.</td></tr>';return;}
   tb.innerHTML=db.employees.map((e,i)=>`<tr><td><strong>${e.name}</strong></td><td>${e.role}</td><td>${e.dept||'-'}</td><td>${e.email||'-'}</td><td>${e.phone||'-'}</td><td><span class="badge ${e.status.toLowerCase()}">${e.status}</span></td><td><button class="btn red small" onclick="deleteItem('employees',${i})">Del</button></td></tr>`).join('');
 }
-function saveMail(){
-  let contact=document.getElementById('m-contact').value.trim();
-  let subject=document.getElementById('m-subject').value.trim();
-  let date=document.getElementById('m-date').value;
-  if(!contact||!subject||!date){alert('Fill required fields');return;}
-  db.mail.push({id:Date.now(),date,contact,subject,type:document.getElementById('m-type').value,project:document.getElementById('m-project').value,notes:document.getElementById('m-notes').value});
-  save();closeModal('mailModal');renderMail();notify('Email logged!');
-  ['m-contact','m-subject','m-project','m-notes'].forEach(id=>document.getElementById(id).value='');
-}
-function renderMail(){
-  let tb=document.getElementById('mailBody');
-  if(!db.mail.length){tb.innerHTML='<tr><td colspan="6" class="empty">No emails logged yet.</td></tr>';return;}
-  tb.innerHTML=db.mail.map((m,i)=>`<tr><td>${m.date}</td><td>${m.contact}</td><td>${m.subject}</td><td>${m.project||'-'}</td><td>${m.type}</td><td><button class="btn red small" onclick="deleteItem('mail',${i})">Del</button></td></tr>`).join('');
-}
 function renderTax(){
   let gstOut=db.invoices.reduce((s,inv)=>s+inv.gstAmt,0);
   let gstIn=db.finance.filter(e=>e.type==='Expense').reduce((s,e)=>s+(e.amount*0.18),0);
-  document.getElementById('tax-out').textContent=fmt(gstOut);
-  document.getElementById('tax-in').textContent=fmt(gstIn);
-  document.getElementById('tax-net').textContent=fmt(gstOut-gstIn);
+  document.getElementById('tax-out').innerHTML=fmt(gstOut);
+  document.getElementById('tax-in').innerHTML=fmt(gstIn);
+  document.getElementById('tax-net').innerHTML=fmt(gstOut-gstIn);
   document.getElementById('tax-inv').textContent=db.invoices.length;
   let tb=document.getElementById('taxBody');
   if(!db.invoices.length){tb.innerHTML='<tr><td colspan="5" class="empty">No GST data yet.</td></tr>';return;}
@@ -473,8 +325,8 @@ function renderDashboard(){
   let recv=db.finance.filter(e=>e.type==='Income'&&e.status==='Pending').reduce((s,e)=>s+e.amount,0);
   let pay=db.finance.filter(e=>e.type==='Expense'&&e.status==='Pending').reduce((s,e)=>s+e.amount,0);
   document.getElementById('dc-proj').textContent=active;
-  document.getElementById('dc-recv').textContent=fmt(recv);
-  document.getElementById('dc-pay').textContent=fmt(pay);
+  document.getElementById('dc-recv').innerHTML=fmt(recv);
+  document.getElementById('dc-pay').innerHTML=fmt(pay);
   document.getElementById('dc-emp').textContent=db.employees.length;
   let dp=document.getElementById('dash-projects');
   dp.innerHTML=db.projects.slice(-5).reverse().map(p=>`<div class="stat-row"><span><strong>${p.name}</strong> — ${p.client}</span><span class="badge ${p.status.toLowerCase()}">${p.status}</span></div>`).join('')||'<p class="empty">No projects yet.</p>';
@@ -483,15 +335,58 @@ function renderDashboard(){
 }
 function deleteItem(type,index){
   if(!confirm('Delete this item?'))return;
-  db[type].splice(index,1);
-  save();
+  db[type].splice(index,1);save();
   if(type==='projects')renderProjects();
   if(type==='finance')renderFinance();
   if(type==='invoices')renderInvoices();
   if(type==='employees')renderEmployees();
-  if(type==='mail')renderMail();
-  renderDashboard();
-  notify('Deleted!');
+  renderDashboard();notify('Deleted!');
+}
+async function loadEmails(){
+  let dot=document.getElementById('mailDot');
+  let statusText=document.getElementById('mailStatusText');
+  let mailList=document.getElementById('mailList');
+  statusText.textContent='Fetching emails...';
+  dot.className='dot';
+  mailList.innerHTML='<div class="empty">Loading emails from ganesan@grid9cleantech.com...</div>';
+  try{
+    let res=await fetch(BACKEND+'/api/emails');
+    let data=await res.json();
+    if(data.success){
+      dot.className='dot online';
+      statusText.textContent='Connected — '+data.count+' emails loaded';
+      document.getElementById('mailCount').textContent=data.count+' messages';
+      if(!data.emails.length){mailList.innerHTML='<div class="empty">No emails found.</div>';return;}
+      mailList.innerHTML=data.emails.reverse().map(m=>`
+        <div class="mail-item">
+          <div class="mail-date">${m.date||''}</div>
+          <div class="mail-subject">${m.subject||'(no subject)'}</div>
+          <div class="mail-from">From: ${m.from||''}</div>
+          <div class="mail-preview">${(m.text||'').substring(0,100)}</div>
+        </div>`).join('');
+    }else{
+      dot.className='dot';
+      statusText.textContent='Error: '+data.error;
+      mailList.innerHTML='<div class="empty">Could not load emails. Check server.</div>';
+    }
+  }catch(err){
+    dot.className='dot';
+    statusText.textContent='Cannot connect to mail server';
+    mailList.innerHTML='<div class="empty">Backend offline. Try refreshing.</div>';
+  }
+}
+async function refreshEmails(){notify('Refreshing emails...');await loadEmails();}
+async function sendEmail(){
+  let to=document.getElementById('send-to').value.trim();
+  let subject=document.getElementById('send-subject').value.trim();
+  let text=document.getElementById('send-body').value.trim();
+  if(!to||!subject||!text){alert('Fill all fields');return;}
+  try{
+    let res=await fetch(BACKEND+'/api/send-email',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({to,subject,text})});
+    let data=await res.json();
+    if(data.success){notify('Email sent successfully!');document.getElementById('send-to').value='';document.getElementById('send-subject').value='';document.getElementById('send-body').value='';}
+    else{alert('Failed: '+data.error);}
+  }catch(err){alert('Cannot connect to server');}
 }
 load();renderDashboard();
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
